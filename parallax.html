@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax website</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        #wrapper{
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 10px;
+
+        }
+        .container{
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            z-index: -1;
+        }
+        .background{
+            transform:translateZ(-20px) scale(3);
+        }
+        .forground{
+            transform: translateZ(-15px)scale(2);
+        }
+        .background, .forground{
+            position:absolute;
+            height:100%;
+            width:100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        h1{
+            position:absolute;
+            font-size: 5rem;
+            top: 4rem;
+            left: 35%;
+            letter-spacing:4px ;
+            color: white;
+        }
+        section{
+            background-color: black;
+            color: white;
+            padding: 5rem 0;
+        }
+        .secheading{
+            font-size: 2rem;
+            padding: 0 2rem;
+        }
+        .text{
+            font-size: 1.5rem;
+            padding: 0 2rem;
+            margin: 5rem;
+        }
+        .des{
+            position: absolute;
+            background-color: white;
+            padding: 0.5rem 2.5rem;
+            top: 50%;
+            left: 50%;
+            color: black;
+        }
+        .bg{
+            position:relative;
+            width:100%;
+            background-attachment: fixed;
+            height:500px;
+            background-size: cover;
+            background-position: center;
+        }
+        .bg1{
+            background-image: url(sport-1.jpg);
+        }
+        .bg2{
+            background-image: url(sport-2.jpg);
+        }
+        .bg3{
+            background-image: url(sport-3.jpg);
+        }
+    </style>
+</head>
+    <div id="wrapper">
+<div class="container">
+    <img src="background.png" class="background">
+    <img src="foreground.png" class="forground">
+    <h1>adventure</h1>
+</div>
+<section>
+    <h2 class="secheading">Adventure Time</h2>
+    <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur temporibus ea perspiciatis velit nihil tenetur, optio dignissimos nostrum expedita illum ducimus laudantium soluta voluptatem molestias. </p>
+    <br> <br>
+    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id ab voluptatem quo consequuntur enim. Illo velit voluptatum esse id eligendi rerum perferendis, architecto repellendus earum adipisci molestiae blanditiis repudiandae iure!</p>
+    <div class="bg bg1">
+        <h2 class="des">BIKING</h2>
+
+    </div>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore commodi voluptas modi similique accusamus doloribus assumenda ut iusto non, voluptatem fugit architecto fugiat quae mollitia velit rerum saepe quo dignissimos. </p>
+    <br> <br>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sunt! Quia ad maiores fugiat repellendus ea deserunt hic! Explicabo voluptatum inventore dolorem optio itaque ipsam sapiente corrupti eligendi! Voluptatum iure explicabo facilis praesentium eos accusamus nesciunt nostrum eius mollitia neque.
+
+    </p>
+
+    <div class="bg bg2">
+        <h2 class="des">Surfing</h2>
+
+    </div>
+    <p class="text">asknvvvvvvvvvvvvvvvvvvvvvvvvvfffffffffffffffffffffkdkskddkv dkvj kdfl jljdff lsdvljv  lk hjk jkhlk kjh klk lk h lkjh lk khl lh lkjjjjjjjjjjjjjj j      j jj j jjjjjjjjjjjjjjjj j j </p>
+    <br> <br>
+    <p class="text">wfhlhdfklahsdkfh aklhfas a flahjkls lsljh lsdlh aljf aldkjh lasdhfl ljsalfh lasdjfh laskjdfh lskdh lskddfh lakdjfh laksjdfh lakjdh laksjdfh laskdjfh aldkjf laskjfh alskjdfh laskdjfh alskdjfha slkdjdfhal fhslkaa lsfh</p>
+    <div class="bg bg3">
+        <h2 class="des">paragliding</h2>
+
+    </div>
+    <p class="text">asknvvvvvvvvvvvvvvvvvvvvvvvvvfffffffffffffffffffffkdkskddkv dkvj kdfl jljdff lsdvljv  lk hjk jkhlk kjh klk lk h lkjh lk khl lh lkjjjjjjjjjjjjjj j      j jj j jjjjjjjjjjjjjjjj j j </p>
+    <br> <br>
+    <p class="text">wfhlhdfklahsdkfh aklhfas a flahjkls lsljh lsdlh aljf aldkjh lasdhfl ljsalfh lasdjfh laskjdfh lskdh lskddfh lakdjfh laksjdfh lakjdh laksjdfh laskdjfh aldkjf laskjfh alskjdfh laskdjfh alskdjfha slkdjdfhal fhslkaa lsfh</p>
+</section>
+
+</div>
+</body>
+</html>

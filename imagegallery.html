@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            height:100vh ;
+            width: auto;
+            }
+        .shivam{
+            height: 100%;
+            width: 100%;
+            object-fit:cover;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            border-radius: 4%;
+           
+        }
+        .box{
+            height: 100vh;
+            width: 100vh;
+            display: grid;
+            grid-template-rows: repeat(3,5fr);
+            grid-template-columns: repeat(3,8fr);
+            grid-gap: 7px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            /* position: relative; */
+            
+           
+        }
+        .shivam{
+            /* cursor: pointer; */
+            filter: grayscale(100%);
+            /* position: absolute; */
+           position: relative ;
+            
+        
+        }
+        .shivam:hover {
+            filter: grayscale(0%);
+            /* scale:2px; */
+            scale: 1.02;
+            box-shadow: 2px 2px;
+            background-image:linear-gradient(black,white);
+        }
+        P{
+           margin: 2px;
+           padding:2px;
+            color: white;
+            position: absolute;
+           
+        }
+           
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Gallery</h1>
+        <div class="box">
+        <div class="shivam"><P>image1</P><img src="image1.jpg" alt=""></div>
+        <div class="shivam"><P>image2</P><img src="image2.jpeg" alt=""></div>
+        <div class="shivam"><P>image3</P><img src="image3.jpeg" alt=""></div>
+        <div class="shivam"><P>image4</P><img src="image4.jpeg" alt=""></div>
+        <div class="shivam"><P>image5</P><img src="image5.jpeg" alt=""></div>
+        <div class="shivam"><P>image6</P><img src="image6.jpeg" alt=""></div>
+        <div class="shivam"><P>image7</P><img src="image7.jpeg" alt=""></div>
+        <div class="shivam"><P>image8</P><img src="image8.jpeg" alt=""></div>
+        <div class="shivam"><P>image9</P><img src="image9.jpeg" alt=""></div>
+        </div>
+    </div>
+    
+</body>
+</html>

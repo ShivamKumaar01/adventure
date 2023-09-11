@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advanced grid </title>
+    <style>
+        .container{
+            height: 500px;
+            border: 1px solid red;
+            background-color: yellow;
+            display: grid;
+            grid-gap: 20px;
+            grid-auto-rows: minmax(100px,auto);
+            grid-template-columns: repeat(3,40px);
+           /* justify-content:center;*/
+           /*align-content: end;
+           justify-items: center;*/
+          
+
+
+            
+
+        }
+        .box{
+            border: 1px solid brown;
+            background-color: aqua;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">header</div>
+        <div class="box" id="sidebar">sidebar</div>
+        <div class="box" id="content">contents</div>
+        <div class="box" id="footer">footer</div>
+       
+       
+    </div>
+    
+</body>
+</html>

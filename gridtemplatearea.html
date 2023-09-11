@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridtemplate</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            height:700px;
+            /* width:500px; */
+            background-color: aqua;
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 30px 150px 400px 30px;
+            grid-template-columns: 400px;
+            grid-template-areas: 
+            "hd"
+            "side"
+            "main"
+            "ft";
+        }
+        .box{
+            /* height:100px;
+            width: 100px; */
+            border: 1px solid black;
+            background-color: beige;
+        }
+        #header{
+            grid-area: hd;
+        }
+        #side{
+            grid-area: side;
+        }
+        #main{
+            grid-area:main ;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">a</div>
+        <div class="box" id="side">b</div>
+        <div class="box" id="main">c</div>
+        <div class="box" id="footer">d</div>
+    </div>
+    
+</body>
+</html>
